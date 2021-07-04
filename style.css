@@ -3,3 +3,144 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #bf80c7;
+	color: #212738;
+}
+.content {
+margin: 40px;
+}
+header {
+	padding: 20px 35px;
+	background-image: url("../Fort-Polio/assets/images/hero.jpg");
+	height: 200px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	border-bottom: 2px solid #1246d6;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+h1 {
+    font-weight: bold;
+	font-size: 50px;
+	color: #212738;
+}
+header nav {
+	padding-top: 15px;
+}
+header a {
+	color: #212738;
+	text-decoration: none;
+}
+header nav ul {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li {
+	display: inline;
+	margin-left: 25px;
+}
+/* general padding */
+section {
+	padding: 30px;
+}
+/* style about me section */
+.about {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.about img {
+	width: 30%;
+	height: 30%;
+	border: solid 2px #b169ad;
+    justify-content: center;
+}
+.about-text {
+	width: 55%;
+	text-align: left;
+	margin: 3.5%;
+}
+.container {
+	min-width: 100%;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-basis: auto;
+	padding: 3rem;
+}
+.column {
+	flex: 1 0 0%;
+}
+.row {
+	display: flex;
+	flex-wrap:wrap;
+}
+.image{
+	width: auto;
+	min-width: 100%;
+	height:350px;
+	display: block;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.one {
+	background-image: url("../Fort-Polio/assets/images/runbudz.jpg");
+	color:#0c0a0a;
+}
+.two {
+	background-image: url("../Fort-Polio/assets/images/horiz.jpg");
+	color: #0c0a0a;
+}
+.three {
+	background-image: url("../Fort-Polio/assets/images/Truman-Capote.jpg");
+	color: #0c0a0a;
+}
+.four {
+	background-image: url("../Fort-Polio/assets/images/meandloubear.jpeg");
+	color: #0c0a0a;
+}
+.five {
+	background-image: url("../Fort-Polio/assets/images/passwordgen.jpg");
+	color: #0c0a0a;
+}
+a {
+	text-decoration: none;
+}
+/* style contact me section */
+.contact-info {
+	padding: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.contact-info a {
+	color: #0f25e4;
+}
+ /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+ @media screen and (max-width: 980px) {
+    .column {
+        width: 100%;
+		display: flex;
+    }
+}
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .column{
+        width: 100%;
+    }
+}
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .column{
+        width: 100%;
+    }
+} 
